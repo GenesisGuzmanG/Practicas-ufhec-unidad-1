@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 7</title>
+</head>
+<body>
+
+<script>
+
+    function esPrimo(num){
+        if(num <= 1) return false;
+
+        for(let i = 2; i < num; i++){
+            if(num % i === 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function esPerfecto(num){
+        let suma = 0;
+
+        for(let i = 1; i < num; i++){
+            if(num % i === 0){
+                suma += i;
+            }
+        }
+
+        return suma === num;
+    }
+
+    let numero = prompt("Ingresa un número:");
+    let mensaje = "";
+
+    if(esPrimo(numero)){
+        mensaje += "Es primo. ";
+    }
+
+    if(esPerfecto(numero)){
+        mensaje += "Es perfecto.";
+    }
+
+    if(mensaje === ""){
+        mensaje = "No es primo ni perfecto.";
+    }
+
+    alert(mensaje);
+
+</script>
+
+</body>
+</html>

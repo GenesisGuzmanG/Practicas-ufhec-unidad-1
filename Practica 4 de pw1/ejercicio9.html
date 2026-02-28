@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 9</title>
+    <style>
+        li{
+            padding: 10px;
+            background-color: rgb(211, 17, 162);
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+</ul>
+
+<script>
+    let elementos = document.querySelectorAll("li");
+
+    elementos.forEach(function(el){
+        el.addEventListener("mouseover", function(){
+            el.style.backgroundColor = "lightgreen";
+        });
+
+        el.addEventListener("mouseout", function(){
+            el.style.backgroundColor = "lightgray";
+        });
+    });
+</script>
+
+</body>
+</html>

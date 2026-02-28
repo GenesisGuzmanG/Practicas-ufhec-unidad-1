@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+
+<script>
+
+    function esNumeroPerfecto(num){
+
+        let suma = 0;
+
+        for(let i = 1; i < num; i++){
+            if(num % i === 0){
+                suma += i;
+            }
+        }
+
+        return suma === num;
+    }
+
+    let numero = prompt("Ingresa un número para verificar si es perfecto:");
+
+    numero = parseInt(numero);
+
+    if(isNaN(numero) || numero <= 0){
+        console.log("Número inválido.");
+    }else{
+
+        if(esNumeroPerfecto(numero)){
+            console.log("El número " + numero + " es perfecto.");
+        }else{
+            console.log("El número " + numero + " NO es perfecto.");
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
