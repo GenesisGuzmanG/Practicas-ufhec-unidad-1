@@ -1,2 +1,2 @@
-# Practicas-ufhec-unidad-1
+# Practicas-ufhec-programacion web
 Todas las practicas colocadas en programacion web 
